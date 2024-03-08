@@ -10,6 +10,7 @@ print("\nWelcome to the application process! \n\
 Please enter your personal data as prompted\n")
 print("-" * 50)
 
+
 # Check first name is alphabetical characters only
 while True:
     first_name = input("Please enter your first name: ")  
@@ -51,17 +52,19 @@ while True:
     else:
         print("Not a valid email address. Please try again.")
 
+
 # Check phone number has correct number of digits and is numerical
 while True:    
-    phone_number = input("Please enter your phone number (no spaces or hyphens): ")
-    if len(phone_number) == 11 and phone_number.isdigit():
-        print(f"Thank you for entering {phone_number} as your phone number.\n")
+    phone_num = input("Please enter your phone number(no spaces or hyphens): ")
+    if len(phone_num) == 11 and phone_num.isdigit():
+        print(f"Thank you for entering {phone_num} as your phone number.\n")
         break
     else:
         print("Not a valid phone number.  Please try again.")
 
+
 # Exit Message showing details input
 print("-" * 50)
 print(f"Thank you for entering your details: \nFull name: {full_name}\n\
-Age: {user_age} \nEmail: {user_email} \nNumber: {phone_number}")
+Age: {user_age} \nEmail: {user_email} \nNumber: {phone_num}")
 print("-" * 50)
